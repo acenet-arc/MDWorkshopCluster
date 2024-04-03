@@ -19,8 +19,8 @@ module "openstack" {
   instances = {
     mgmt   = { type = "p8-12gb", tags = ["puppet", "mgmt", "nfs"], count = 1, disk_size=50 }
     login  = { type = "p8-12gb", tags = ["login", "public", "proxy"], count = 1, disk_size=50 }
-    nodeCPU   = { type = "c4-15gb-83", tags = ["node"], count = 1 }
-    nodeGPU   = { type = "g1-8gb-c4-22gb", tags = ["node"], count = 1 }
+    nodecpu   = { type = "c4-15gb-83", tags = ["node"], count = 1 }
+    nodegpu   = { type = "g1-8gb-c4-22gb", tags = ["node"], count = 1 }
   }
 
   # var.pool is managed by Slurm through Terraform REST API.
@@ -37,7 +37,7 @@ module "openstack" {
     }
   }
 
-  public_keys = [file("~/.ssh/id_rsa.pub")]
+  public_keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcSDJGffyJA9g7mEwOcE3MDU6QthnTr40EnyvYvl8BDHUG8pTkYhB3kxQIZkK0Lc1+7xwh+2VcjXsBdhe5WiOXayGVoK+fpU+JzYcc9iKq0zREiFTYdXUe5cuKbtWmmbV8Fs01xwwfo4gW7ox6QKK+JwmDGbUoMAV9fMoF2XCG9VUUt6HB3cilsEGuaTzPADbMqevSHZKalVzJDc/9B5n5ZUQ6rwHO40EwXuIHCOVUoPYqHQVqJWWopcj8j9KdUWZKo9jqnrntxcVDZsDrHuZpU45wEg/Z1KirmaaupDCBphYlMFlkYCXGgNWHIMAYI92vUNgAO1x8cSJi2/eLkMuf svassili@sergeys-mbp.wifi.unb.ca"]
   generate_ssh_key=true
 
   nb_users = 100
