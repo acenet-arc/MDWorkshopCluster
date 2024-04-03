@@ -43,6 +43,8 @@ module "openstack" {
   nb_users = 100
   # Shared password, randomly chosen if blank
   guest_passwd = ""
+  
+  hieradata = file("./config.yaml")
 }
 
 output "accounts" {
