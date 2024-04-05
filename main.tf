@@ -37,7 +37,7 @@ module "openstack" {
     }
   }
 
-  public_keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcSDJGffyJA9g7mEwOcE3MDU6QthnTr40EnyvYvl8BDHUG8pTkYhB3kxQIZkK0Lc1+7xwh+2VcjXsBdhe5WiOXayGVoK+fpU+JzYcc9iKq0zREiFTYdXUe5cuKbtWmmbV8Fs01xwwfo4gW7ox6QKK+JwmDGbUoMAV9fMoF2XCG9VUUt6HB3cilsEGuaTzPADbMqevSHZKalVzJDc/9B5n5ZUQ6rwHO40EwXuIHCOVUoPYqHQVqJWWopcj8j9KdUWZKo9jqnrntxcVDZsDrHuZpU45wEg/Z1KirmaaupDCBphYlMFlkYCXGgNWHIMAYI92vUNgAO1x8cSJi2/eLkMuf svassili@sergeys-mbp.wifi.unb.ca"]
+  public_keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcSDJGffyJA9g7mEwOcE3MDU6QthnTr40EnyvYvl8BDHUG8pTkYhB3kxQIZkK0Lc1+7xwh+2VcjXsBdhe5WiOXayGVoK+fpU+JzYcc9iKq0zREiFTYdXUe5cuKbtWmmbV8Fs01xwwfo4gW7ox6QKK+JwmDGbUoMAV9fMoF2XCG9VUUt6HB3cilsEGuaTzPADbMqevSHZKalVzJDc/9B5n5ZUQ6rwHO40EwXuIHCOVUoPYqHQVqJWWopcj8j9KdUWZKo9jqnrntxcVDZsDrHuZpU45wEg/Z1KirmaaupDCBphYlMFlkYCXGgNWHIMAYI92vUNgAO1x8cSJi2/eLkMuf svassili@sergeys-mbp.wifi.unb.ca","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILWHSMDMhlXIy+C7/Dw4b7dUgfZkE3AXnG8PDDkyY9Qm cgeroux@lunar"]
   generate_ssh_key=true
 
   nb_users = 100
