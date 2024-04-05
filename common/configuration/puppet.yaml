@@ -11,6 +11,7 @@ users:
 %{ endfor ~}
 
 runcmd:
+  - ln -s /cvmfs/soft.computecanada.ca/gentoo/2020/bin/csh /bin/csh
   # Verify ${sudoer_username} was created with the right homedir. If it wasn't
   # the user with the corresponding username is entirely removed, cloud-init is
   # cleaned and the system is rebooted. This happens when configuring from images
