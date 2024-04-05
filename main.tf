@@ -8,13 +8,14 @@ variable "pool" {
 }
 
 module "openstack" {
-  source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack?ref=13.3.2"
+  #source         = "git::https://github.com/ComputeCanada/magic_castle.git//openstack?ref=13.3.2"
+  source ="./openstack"
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
   config_version = "13.3.2"
 
   cluster_name = "moledyn"
   domain       = "ace-net.training"
-  image        = "Rocky-9.3-x64-2023-11"
+  image        = "Rocky-8.9-x64-2023-11"
 
   instances = {
     mgmt   = { type = "p8-12gb", tags = ["puppet", "mgmt", "nfs"], count = 1, disk_size=50 }
