@@ -20,7 +20,7 @@ module "openstack" {
   instances = {
     mgmt   = { image="Rocky-9.3-x64-2023-11", type = "p8-12gb", tags = ["puppet", "mgmt", "nfs"], count = 1, disk_size=50 }
     login  = { image="Rocky-9.3-x64-2023-11", type = "p8-12gb", tags = ["login", "public", "proxy"], count = 1, disk_size=50 }
-    nodecpu   = { image="Rocky-9.3-x64-2023-11", type = "c4-15gb-83", tags = ["node"], count = 2 }
+    nodecpu   = { image="Rocky-9.3-x64-2023-11", type = "c4-15gb-83", tags = ["node"], count = 20 }
     nodegpu   = { image="Rocky-8.9-x64-2023-11", type = "g1-8gb-c4-22gb", tags = ["node"], count = 1 }
   }
 
